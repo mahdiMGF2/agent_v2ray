@@ -1,0 +1,36 @@
+{% extends 'baseDashboard.html' %}
+{%  block title %}ورود{% endblock %}
+{%  block body %}
+    <div class="container">
+    <div class="boxlogin">
+        <h3 class="title">ورود به پنل کاربری</h3>
+            {% if form.errors %}
+                <div class="box_error">
+           {% for error in form.username.errors %}
+              {{ error }}
+            {% endfor %}
+            {% for error in form.non_field_errors %}
+              {{ error }}
+            {% endfor %}
+                </div>
+            {% endif %}
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div class="input_login">
+            <div class="form-control">
+            <input type="text" name="username" placeholder="نام کاربری خود را وارد نمایید" required>
+                <label>نام کاربری</label>
+                </div>
+            <div class="form-control">
+            <input type="password" name="password" placeholder="رمز عبور را وارد کنید" required>
+                <label>رمز عبور</label>
+                </div>
+                </div>
+            <div class="btnpanel">
+            <button class="button_submit" type="submit">ورود</button>
+            <a class="button_register" href="{% url 'user_agent:registerpage' %}">ثبت نام</a>
+                </div>
+        </form>
+    </div>
+    </div>
+{% endblock %}

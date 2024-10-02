@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 /agent
 /.idea
+*.DS_Store
 # C extensions
 *.so
 

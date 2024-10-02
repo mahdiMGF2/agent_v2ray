@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background: url("./images/background_login.jpg") no-repeat center center ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxlogin .title{
+    margin-bottom: 30px;
+    color: #fff;
+}
+.boxlogin{
+    color: #fff;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    flex-direction: column;
+    width:30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxlogin form{
+    width: 100%;
+}
+.boxlogin .input_login{
+    width: 100%;
+    }
+.boxlogin .form-control{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.boxlogin .form-control input{
+    border: none;
+    text-align: right;
+    margin-left: auto;
+    padding: 5px;
+    width: 50%;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.57);
+}
+.boxlogin .form-control label{
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+.boxlogin .form-control input:focus{
+    outline: none;
+    background: rgba(255, 255, 255, 0.73);
+}
+.btnpanel{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.button_submit{
+    margin: 30px 20px;
+    all:unset;
+    width: 40%;
+    border-radius: 6px;
+    background: #2d76e1;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.button_register{
+    margin: 30px 20px;
+    cursor: pointer;
+    all:unset;
+    width: 40%;
+    border-radius: 6px;
+    background: white;
+    color: #2d76e1;
+    padding: 5px;
+    text-align: center;
+}
+.button_register:hover{
+    background: #2d76e1;
+    color: #fff;
+}
+.button_submit:hover{
+    background: #fff;
+    color: #2d76e1;
+}
+.box_error{
+    background-color: #da4747;
+    color: #fff;
+    padding: 6px 40px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}پنل کاربری{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+<style>
+        @font-face {
+            font-family: 'Conv_IranSansDN';
+            src: url("{% static 'fonts/IRANSansWeb.eot' %}");
+            src: local('☺'),
+            url("{% static 'fonts/IRANSansWeb.woff' %}") format('woff'),
+            url("{% static 'fonts/IRANSansWeb.ttf' %}") format('truetype');
+        }
+
+        * {
+            font-family: Conv_IranSansDN;
+        }
+    </style>
+</head>
+<body>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>
