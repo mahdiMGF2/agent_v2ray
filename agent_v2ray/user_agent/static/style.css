@@ -70,27 +70,12 @@
 .button_submit{
     margin: 30px 20px;
     all:unset;
-    width: 40%;
+    width: 100%;
     border-radius: 6px;
     background: #2d76e1;
     padding: 5px;
     text-align: center;
     cursor: pointer;
-}
-.button_register{
-    margin: 30px 20px;
-    cursor: pointer;
-    all:unset;
-    width: 40%;
-    border-radius: 6px;
-    background: white;
-    color: #2d76e1;
-    padding: 5px;
-    text-align: center;
-}
-.button_register:hover{
-    background: #2d76e1;
-    color: #fff;
 }
 .button_submit:hover{
     background: #fff;
@@ -102,4 +87,41 @@
     padding: 6px 40px;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+.dashboard header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 0 0;
+}
+.box_header{
+    width: 33.3333%;
+    color: white;
+    background: url("./images/cool-background.png") no-repeat center center ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 30px;
+}
+.box_header .icon{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.box_header .icon span{
+    font-size: 50px;
+}
+.box_header .icon p {
+    margin: 0 10px;
+}
+.box_header .title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.box_header .vluebox{
+    font-weight: bold;
+    font-size: 20px;
 }
